@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/f42c9caf70.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="burgermenu">
+      <h1><a href="index.html">
+        <div class="logo"></div>
+      </a></h1>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+        <div id="myLinks">
+          <h2>SHIPMENT LIST</h2>
+          <a href="#" id="linkamazon">Amazon</a>
+          <a href="#" id="linkamerica">American Express</a>
+          <a href="#" id="linkwalmart">Walmart</a>
+          <a href="#" id="linkapple">Apple</a>
+        </div>
+        <div class="container" id="container">
+          <form name="search">
+              <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+          </form>    
+          <i class="fas fa-search"></i>
+      </div>
+    </header>
+    <main id="mainMenu">
+      <div class="calculation">
+        <h2 id="companyname">Welcome !!!</h2>
+        <h3 id="companydesc">contact@companyname.com</h4>
+        <h4>CARGO BOXES</h4>
+        <div class="cargo">
+          <h1 id="box"></h1>
+        </div>
+        <h4 class="req">Number of required cargo bays</h4>
+        <p class="cargobox" id="test">0</p>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

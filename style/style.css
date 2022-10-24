@@ -1,0 +1,211 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #979797;
+}
+body{
+    background: #5F6472;
+}
+main{
+    display: flex;
+}
+.logo{
+    width: 228px;
+    height: 45px;
+    background-image: url(../images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-top: 28px;
+    margin-left: 40px
+}
+.icon{
+    display: none;
+}
+#myLinks{
+    width: 300px;
+    height: 214px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 30px;
+
+}
+#myLinks a{
+    font-size: 26px;
+    padding: 14px 0;
+}
+#myLinks h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#myLinks a:hover{
+    background: linear-gradient(90deg, rgba(45, 48, 56, 0) 22.92%, #2D3038 );
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+}
+.calculation{
+    width: 980px;
+    padding: 30px 50px;
+    border-radius: 30px;
+    margin-left: 380px;
+    margin-top: -260px;
+    background: linear-gradient(124.01deg, #2D3038 0%, rgba(45, 48, 56, 0) 100%);
+}
+.calculation h2{
+    font-size: 64px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.calculation h3{
+    font-size: 18px;
+    margin-bottom: 34px;
+}
+.calculation h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.cargo{
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+#box{
+    padding: 12px 10px;
+    color: rgb(0, 0, 0);
+}
+.req{
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-size: 34px;
+}
+.cargobox{
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 170px;
+    height: 30px;
+    padding-top: 20px;
+}
+.container{
+    display: none;
+}
+
+@media only screen and (max-width: 375px){
+    .logo{
+        width: 150px;
+        height: 30px;
+        margin-top: 24px;
+        margin-left: 18px;
+        background-image: url(../images/Logo.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+    .list{
+        display: none;
+    }
+    .container{
+        display: block;
+        position: relative;
+    }
+    
+    .input {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        margin-left: 18px;
+        border: 2px solid #5F6472;
+        border-radius: 50px;
+        box-sizing: border-box;
+        font-size: 26px;
+        background-color: #979797;
+        color: #ffffff;
+        outline: none;
+        transition: .5s;
+    }
+    .container:hover input{
+        width: 310px;
+        background: #2D3038;
+        border-radius: 10px;
+    }  
+    .container i{
+        position: absolute;
+        top: 10px;
+        left: 26px;
+        font-size: 22px;
+        color: #000000;
+        transition: .2s;
+    }
+    .container:hover i{
+        opacity: 0;
+        z-index: -1;
+    }
+    .calculation{
+        background: linear-gradient(124.01deg, #2D3038 0%, rgba(45, 48, 56, 0) 100%);
+        border-radius: 30px;
+        margin: 0 auto;
+        margin-top: 22px;
+        width: 334px;
+        padding: 8px 16px;
+        padding-top: 30px;
+    }
+    .calculation h2{
+        font-size: 32px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+    .calculation h3{
+        font-size: 16px;
+        margin-bottom: 34px;
+    }
+    .req{
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        margin-top: 50px;
+    }
+    .cargo{
+        width: 305px;
+        height: 40px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .cargobox{
+        font-size: 34px;
+        color: #ffffff;
+        margin-bottom: 170px;
+        height: 30px;
+        padding-left: 50%;
+        padding-top: 20px;
+    }
+    .burgermenu{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .icon{
+        display: block;
+        margin-top: 24px;
+        font-size: 30px;
+    }
+    #myLinks{
+        display: none;
+        height: 214px;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+    #myLinks a{
+        padding: 14px 0;
+        font-size: 26px;
+    }
+    #myLinks a:hover{
+        background: linear-gradient(90deg, rgba(45, 48, 56, 0) 22.92%, #2D3038 );
+        border-radius: 10px;
+        width: 100%;
+        height: 60px;
+        color: #ffffff;
+    }
+}
